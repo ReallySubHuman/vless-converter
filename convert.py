@@ -7,11 +7,24 @@ import requests
 from urllib.parse import urlencode, quote
 
 SOURCE_URL = os.environ["SOURCE_URL"]
+CUSTOM_UA = os.environ.get("USER_AGENT", "").strip()
+
 OUTPUT_PLAIN = "vless.txt"
 OUTPUT_B64 = "sub.txt"
 MAX_DEPTH = 6
 
+# Источник отдаёт HTML-заглушку браузерам и подписку только VPN-клиентам
+CLIENT_USER_AGENTS = [
+    "Happ/2.7.0",
+    "v2rayNG/1.9.46",
+    "Hiddify/2.0.5",
+    "sing-box/1.10.0",
+    "Streisand/1.6.0",
+    "v2rayN/7.0.0",
+]
+
 B64_RE = re.compile(r"^[A-Za-z0-9+/_\-=\s]+$")
+VLESS_RE = re.compile(r"vless://[^\s\"'<>\\]+")
 
 
 # ---------------------------------------------------------------------------
@@ -276,33 +289,70 @@ def scan(obj, depth=0):
 
 
 # ---------------------------------------------------------------------------
-# main
+# Загрузка
 # ---------------------------------------------------------------------------
-def download(url):
+def download(url, user_agent):
     response = requests.get(
         url,
         timeout=60,
-        headers={"User-Agent": "Mozilla/5.0"},
+        headers={
+            "User-Agent": user_agent,
+            "Accept": "*/*",
+        },
     )
     response.raise_for_status()
-    return response.text
+    return response.text, response.headers.get("Content-Type", "")
 
 
+def looks_like_html(text):
+    head = text.lstrip()[:200].lower()
+    return head.startswith("<!doctype html") or head.startswith("<html")
+
+
+def extract(text):
+    """Основной разбор + запасной поиск vless:// регуляркой."""
+    if looks_like_html(text):
+        return []
+
+    found = parse_content(text)
+    if not found:
+        found = VLESS_RE.findall(text)
+    return found
+
+
+def fetch_links(url):
+    agents = [CUSTOM_UA] if CUSTOM_UA else CLIENT_USER_AGENTS
+
+    for ua in agents:
+        try:
+            text, ctype = download(url, ua)
+        except requests.RequestException as e:
+            print(f"  [{ua}] download error: {e}")
+            continue
+
+        found = extract(text)
+        print(f"  [{ua}] content-type={ctype!r}, {len(text)} bytes, "
+              f"found {len(found)} configs")
+
+        if found:
+            return found
+
+        preview = text.strip()[:200].replace("\n", " ")
+        print(f"  [{ua}] preview: {preview}")
+
+    return []
+
+
+# ---------------------------------------------------------------------------
+# main
+# ---------------------------------------------------------------------------
 def main():
     urls = [u for u in re.split(r"[\s,]+", SOURCE_URL.strip()) if u]
     all_links = []
 
     for url in urls:
         print("Downloading subscription...")
-        try:
-            text = download(url)
-        except requests.RequestException as e:
-            print(f"Failed to download a source: {e}")
-            continue
-
-        found = parse_content(text)
-        print(f"  found {len(found)} configs")
-        all_links.extend(found)
+        all_links.extend(fetch_links(url))
 
     links = list(dict.fromkeys(all_links))
 
