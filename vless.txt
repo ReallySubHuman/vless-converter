@@ -1,6 +1,4 @@
 vless://00000000-0000-0000-0000-000000000000@0.0.0.0:1?encryption=none&security=none&type=tcp#proxy
-vless://b5fcdccf-8553-4175-a52f-047707b1e756@127.0.0.1:8443?encryption=none&security=reality&type=tcp&sni=northgrid.silalink.sbs&fp=chrome&pbk=FAjGktwxU6lKjSqc0yfBUvcW7gjfcKsPkiyNH4pzoBA&sid=7a2b9c4d&flow=xtls-rprx-vision#proxy
-vless://b5fcdccf-8553-4175-a52f-047707b1e756@31.59.190.18:8443?encryption=none&security=reality&type=grpc&sni=northgrid.silalink.sbs&fp=chrome&pbk=Il_wxsWno5XDSTU92FWqalsH7hhGBQA_GYkxznUiBH4&sid=a2b213d4#proxy
 vless://37af0181-5598-4aad-a040-d926bcb65757@78.159.250.83:8443?encryption=none&security=tls&type=xhttp&sni=earlytrain.net&fp=firefox#proxy
 vless://ca52e2b6-fb9f-4dac-b6dc-49da9923f251@209.200.246.148:443?encryption=none&security=reality&type=raw&sni=www.cloudflare.com&fp=firefox&pbk=uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk&sid=f98843107912e782&flow=xtls-rprx-vision#proxy
 vless://ca52e2b6-fb9f-4dac-b6dc-49da9923f251@209.200.246.148:443?encryption=none&security=reality&type=raw&sni=www.cloudflare.com&pbk=uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk&sid=f98843107912e782&flow=xtls-rprx-vision#proxy
@@ -11,13 +9,14 @@ vless://3950b45e-740d-4dca-ac95-505ec8534592@45.90.59.15:443?encryption=none&sec
 vless://adcaa148-7c66-4282-a81a-99ec8afa029d@82.118.19.153:443?encryption=none&security=reality&type=raw&sni=www.cloudflare.com&pbk=Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE&sid=670ed9f350bd8ee0&flow=xtls-rprx-vision#proxy
 vless://adcaa148-7c66-4282-a81a-99ec8afa029d@82.118.19.153:443?encryption=none&security=reality&type=raw&sni=www.cloudflare.com&fp=chrome&pbk=Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE&sid=670ed9f350bd8ee0&flow=xtls-rprx-vision#proxy
 vless://adcaa148-7c66-4282-a81a-99ec8afa029d@82.118.19.153:443?encryption=none&security=reality&type=raw&sni=www.cloudflare.com&fp=firefox&pbk=Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE&sid=670ed9f350bd8ee0&flow=xtls-rprx-vision#proxy
-vless://4cabcd59-a405-4c00-96f5-03507e1e28fa@188.225.73.41:443?encryption=none&security=tls&type=grpc&sni=cadrin.wtf&fp=firefox&serviceName=cache.sync.v1#proxy
-vless://4b50270b-5caf-4c34-b3da-17b4525604a6@188.225.37.175:443?encryption=none&security=tls&type=ws&sni=cryptoventura.online&fp=ios&path=%2Fapi%2Fde3%2Flive&host=cryptoventura.online#proxy
-vless://4b50270b-5caf-4c34-b3da-17b4525604a6@188.225.37.175:443?encryption=none&security=tls&type=ws&sni=cryptoventura.online&fp=safari&path=%2Fapi%2Fde3%2Flive&host=cryptoventura.online#proxy
 vless://4b50270b-5caf-4c34-b3da-17b4525604a6@188.225.37.175:443?encryption=none&security=tls&type=ws&sni=cryptoventura.online&fp=firefox&path=%2Fapi%2Fde3%2Flive&host=cryptoventura.online#proxy
-vless://4b50270b-5caf-4c34-b3da-17b4525604a6@188.225.37.175:443?encryption=none&security=tls&type=ws&sni=cryptoventura.online&fp=chrome&path=%2Fapi%2Fde3%2Flive&host=cryptoventura.online#proxy
+vless://4cabcd59-a405-4c00-96f5-03507e1e28fa@188.225.73.41:443?encryption=none&security=tls&type=grpc&sni=cadrin.wtf&fp=firefox&serviceName=cache.sync.v1#proxy
 vless://4cabcd59-a405-4c00-96f5-03507e1e28fa@188.225.73.41:443?encryption=none&security=tls&type=grpc&sni=cadrin.wtf&fp=ios&serviceName=cache.sync.v1#proxy
-vless://820fa845-a1eb-4a83-b613-e6714cea8a1a@188.225.56.133:443?encryption=none&security=tls&type=grpc&sni=astronovalis.wtf&fp=firefox&serviceName=glush.de2.v1#proxy
+vless://4b50270b-5caf-4c34-b3da-17b4525604a6@188.225.37.175:443?encryption=none&security=tls&type=ws&sni=cryptoventura.online&fp=edge&path=%2Fapi%2Fde3%2Flive&host=cryptoventura.online#proxy
+vless://7d43670b-6b08-45b9-8a24-8f3971abc132@188.72.111.18:443?encryption=none&security=tls&type=xhttp&sni=ya.biznes.lol&fp=firefox#proxy
+vless://6fca8bc6-d365-4ae8-b2a4-4218526efde8@185.86.145.174:8444?encryption=none&security=reality&type=raw&sni=passport.yandex.ru&fp=firefox&pbk=nOMWYHoXc-7jjG7opszDSvmGwQk9tWkLgQ_bnLPXAnU&sid=5e880b8b43771a4f&flow=xtls-rprx-vision-udp443#proxy
+vless://84a56b88-2f89-4a57-b925-74abd5b7fd87@95.167.57.129:8445?encryption=none&security=reality&type=raw&sni=passport.yandex.ru&fp=firefox&pbk=I_0JD13_bJuD6bNhTfb1PFPJUQqEVHl-YFluNwHAPD4&flow=xtls-rprx-vision#proxy
+vless://84a56b88-2f89-4a57-b925-74abd5b7fd87@185.86.145.223:8445?encryption=none&security=reality&type=raw&sni=passport.yandex.ru&fp=firefox&pbk=I_0JD13_bJuD6bNhTfb1PFPJUQqEVHl-YFluNwHAPD4&flow=xtls-rprx-vision#proxy
 vless://12c53e32-e589-47d6-b857-e4132294f767@46.28.71.247:443?encryption=none&security=reality&type=raw&sni=www.cloudflare.com&fp=firefox&pbk=v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE&sid=0dfc23fe80778c00&flow=xtls-rprx-vision#proxy
 vless://12c53e32-e589-47d6-b857-e4132294f767@46.28.71.247:443?encryption=none&security=reality&type=raw&sni=www.cloudflare.com&fp=chrome&pbk=v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE&sid=0dfc23fe80778c00&flow=xtls-rprx-vision#proxy
 vless://12c53e32-e589-47d6-b857-e4132294f767@46.28.71.247:443?encryption=none&security=reality&type=raw&sni=www.cloudflare.com&pbk=v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE&sid=0dfc23fe80778c00&flow=xtls-rprx-vision#proxy
@@ -25,6 +24,7 @@ vless://edb50d20-2d3e-4c1e-8a75-a17168a89aa5@145.223.68.58:443?encryption=none&s
 vless://edb50d20-2d3e-4c1e-8a75-a17168a89aa5@145.223.68.58:443?encryption=none&security=reality&type=raw&sni=www.cloudflare.com&fp=firefox&pbk=qc2DcqT9zPPZr6ePZ7ukxACWrYhRNIBjDIjCK7veyQg&sid=a44ff7d2e80213c2&flow=xtls-rprx-vision#proxy
 vless://edb50d20-2d3e-4c1e-8a75-a17168a89aa5@145.223.68.58:443?encryption=none&security=reality&type=raw&sni=www.cloudflare.com&pbk=qc2DcqT9zPPZr6ePZ7ukxACWrYhRNIBjDIjCK7veyQg&sid=a44ff7d2e80213c2&flow=xtls-rprx-vision#proxy
 vless://9f61cdf4-810d-4052-bbc7-2da0c8e20104@83.147.18.3:443?encryption=none&security=reality&type=raw&sni=www.cloudflare.com&fp=chrome&pbk=3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA&sid=fd8cf7e1173f0edb&flow=xtls-rprx-vision#proxy
+vless://9f61cdf4-810d-4052-bbc7-2da0c8e20104@83.147.18.3:443?encryption=none&security=reality&type=raw&sni=www.cloudflare.com&pbk=3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA&sid=fd8cf7e1173f0edb&flow=xtls-rprx-vision#proxy
 vless://8f704ed6-9a1a-4d04-94dd-1bff501716de@85.90.197.220:443?encryption=none&security=reality&type=raw&sni=www.cloudflare.com&fp=chrome&pbk=biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4&sid=94acb54627612d43&flow=xtls-rprx-vision#proxy
 vless://8f704ed6-9a1a-4d04-94dd-1bff501716de@85.90.197.220:443?encryption=none&security=reality&type=raw&sni=www.cloudflare.com&fp=firefox&pbk=biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4&sid=94acb54627612d43&flow=xtls-rprx-vision#proxy
 vless://dc2259c4-388e-4285-ba18-df619b6672b6@82.118.16.187:443?encryption=none&security=reality&type=raw&sni=www.cloudflare.com&pbk=R5ycsjJ-v024902dMSqTsSdqxUwCFEXMebdBEWFt9VU&sid=cd6065902eea7a02&flow=xtls-rprx-vision#proxy
@@ -83,6 +83,7 @@ vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.214:23576?encryption=none
 vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.195:23576?encryption=none&security=reality&type=raw&sni=fuck.rkn&fp=chrome&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01&flow=xtls-rprx-vision#proxy
 vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.219:23576?encryption=none&security=reality&type=raw&sni=fuck.rkn&fp=chrome&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01&flow=xtls-rprx-vision#proxy
 vless://48ff2b70-e180-582f-8866-d9a2edeed5f5@15.204.97.197:23576?encryption=none&security=reality&type=raw&sni=fuck.rkn&fp=chrome&pbk=1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s&sid=01&flow=xtls-rprx-vision#proxy
+vless://975fc322-6e38-434b-a53c-d39fed49b9a9@47.251.108.158:443?encryption=none&security=reality&type=raw&sni=www.cloudflare.com&fp=qq&pbk=SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs&sid=896f52ba2cfca903&flow=xtls-rprx-vision#proxy
 vless://975fc322-6e38-434b-a53c-d39fed49b9a9@47.251.108.158:443?encryption=none&security=reality&type=raw&sni=www.cloudflare.com&fp=chrome&pbk=SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs&sid=896f52ba2cfca903&flow=xtls-rprx-vision#proxy
 vless://975fc322-6e38-434b-a53c-d39fed49b9a9@47.251.108.158:443?encryption=none&security=reality&type=raw&sni=www.cloudflare.com&fp=ios&pbk=SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs&sid=896f52ba2cfca903&flow=xtls-rprx-vision#proxy
 vless://975fc322-6e38-434b-a53c-d39fed49b9a9@47.251.108.158:443?encryption=none&security=reality&type=raw&sni=www.cloudflare.com&fp=firefox&pbk=SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs&sid=896f52ba2cfca903&flow=xtls-rprx-vision#proxy
@@ -122,3 +123,7 @@ vless://dd5bed0b-ee77-481b-9f2c-250a632ddd9f@get.jarbook.net:443?encryption=none
 vless://4662bf2b-af58-0001-ae5f-ef3d7d3a624f@mbr.rkn-pediki.site:443?encryption=none&security=tls&type=ws&sni=mbr.rkn-pediki.site&fp=ios&path=%2Fsession&host=mbr.rkn-pediki.site#proxy
 vless://6c8e3705-809e-4ca8-ae10-fe2ae2fa9859@188.225.83.56:8004?encryption=none&security=tls&type=xhttp&sni=origin.soshelper.space&fp=firefox#proxy
 vless://2b5962e8-1ec2-0001-bdab-cefa57555d2a@mbr.rkn-pediki.site:443?encryption=none&security=tls&type=ws&sni=mbr.rkn-pediki.site&path=%2Fsession&host=mbr.rkn-pediki.site#proxy
+vless://4662bf2b-af58-0001-ae5f-ef3d7d3a624f@185.178.208.167:443?encryption=none&security=tls&type=ws&sni=mbr.rkn-pediki.site&fp=ios&path=%2Fsession&host=mbr.rkn-pediki.site#proxy
+vless://d8d9d99e-6622-4620-92dc-23ac2b6d30f6@shop07.gruzit.my:443?encryption=none&security=tls&type=xhttp&sni=shop07.gruzit.my&fp=firefox#proxy
+vless://7d718630-7a1a-4af8-9332-aa0610634e8a@filnex.baby:443?encryption=none&security=tls&type=grpc&sni=filnex.baby&fp=firefox&serviceName=lalibobi.tw.de1.Connect#proxy
+vless://981e728f-d403-4fef-a1ff-6ba9ebe0e702@static.nlomasterpanel.ru:443?encryption=none&security=tls&type=xhttp&sni=static.nlomasterpanel.ru&fp=chrome#proxy
